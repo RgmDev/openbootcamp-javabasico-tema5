@@ -1,15 +1,23 @@
 package org.example;
 
 public class CocheCRUDImpl implements CocheCRUD {
-    public void save() {
-        System.out.println("Método save()");
+    @Override
+    public String save() {
+        return "save()";
     }
 
-    public void findAll() {
-        System.out.println("Método findAll()");
+    @Override
+    public String findAll() {
+        return "findAll()";
     }
 
-    public void delete() {
-        System.out.println("Método delete()");
+    @Override
+    public String delete() {
+        return "delete()";
+    }
+
+    @Override
+    public String toString() {
+        return "CocheCRUDImpl: "+this.save()+" | "+this.findAll()+" | "+this.delete();
     }
 }

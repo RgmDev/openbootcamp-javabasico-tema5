@@ -1,7 +1,7 @@
 package org.example;
 
 public interface CocheCRUD {
-    public void save();
-    public void findAll();
-    public void delete();
+    public String save();
+    public String findAll();
+    public String delete();
 }
